@@ -1,0 +1,16 @@
+<template>
+  <div class="container">
+    {{todo.created}}
+  </div>
+</template>
+<script>
+export default {
+  props: ['todo']
+}
+</script>
+<style scoped>
+.container{
+    width: 100%;
+}
+</style>
+

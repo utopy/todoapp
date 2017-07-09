@@ -1,0 +1,64 @@
+<template>
+  <div class="container">
+        <div class="button1"></div>
+        <div class="button2"></div>
+        <div class="button3"></div>
+        <div class="button4"></div>
+        <div class="button5"></div>
+  </div>
+</template>
+<script>
+export default {
+  name:"dock"
+}
+</script>
+<style scoped>
+.container {
+    height: 50px;
+    width: 100vw;
+    background: red;
+	display: box;
+	box-orient: horizontal;
+	box-pack: center;
+	box-direction: normal;
+	box-align: center;
+}
+
+.button1{
+	box-ordinal-group: 1;
+	box-flex: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.button2{
+	box-ordinal-group: 1;
+	box-flex: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.button3{
+	box-ordinal-group: 1;
+	box-flex: 0;
+    background: blue;
+    width: 50px;
+    height: 50px;
+}
+
+.button4{
+	box-ordinal-group: 1;
+	box-flex: 0;
+    width: 50px;
+    height: 50px;
+}
+
+.button5{
+	box-ordinal-group: 1;
+	box-flex: 0;
+    width: 50px;
+    height: 50px;
+}
+</style>
+
+

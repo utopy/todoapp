@@ -1,0 +1,41 @@
+<template>
+  <div class="container">
+    <div class="checkContainer">
+        <input type="checkbox" id="checkbox" v-model="todo.completed">
+    </div>
+    <div>
+        {{todo.completed}}
+    </div>
+  </div>
+</template>
+<script>
+export default {
+  props: ['todo']
+}
+</script>
+<style scoped>
+.container{
+    width: 100%;
+    background: red;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.container > div{
+    display: inline-block
+}
+
+.checkbox{
+    height: 20px;
+    width: 20px;
+}
+
+.checkbox input{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 10px;
+    height: 10px;
+}
+</style>
+
